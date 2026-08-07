@@ -1,0 +1,106 @@
+.about{
+    width: 100%;
+    padding-top: 25vh;
+    padding-bottom: 3em;
+}
+
+.about-hero{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    background-color: var(--main-color);
+    border-radius: 14px;
+    padding: 3em;
+}
+.about-hero .txt{
+    width: 55%;
+}
+.about-hero h1{
+    font-size: 2.2em;
+    margin-bottom: .3em;
+}
+.about-hero h1 span{
+    display: block;
+}
+.about-hero p{
+    color: #444;
+    line-height: 1.7;
+    text-transform: none;
+}
+.about-hero figure{
+    width: 35%;
+    height: 260px;
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.about-hero figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-values{
+    width: 90%;
+    margin: 4em auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6em;
+}
+.value-card{
+    background-color: #fff;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    padding: 2em 1.6em;
+    text-align: center;
+    transition: .25s;
+}
+.value-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+.value-card i{
+    font-size: 2.2em;
+    color: var(--green);
+    margin-bottom: .4em;
+}
+.value-card h3{
+    margin-bottom: .4em;
+}
+.value-card p{
+    color: #555;
+    text-transform: none;
+    line-height: 1.6;
+}
+
+.about-stats{
+    width: 90%;
+    margin: 4em auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--green);
+    border-radius: 14px;
+    padding: 2.2em;
+    color: #fff;
+    text-align: center;
+}
+.about-stats .stat h2{
+    font-size: 2em;
+    margin: 0;
+}
+.about-stats .stat p{
+    margin: 0;
+    text-transform: none;
+    opacity: .9;
+}
+
+@media (max-width: 900px){
+    .about-hero{ flex-direction: column; padding: 1.6em; }
+    .about-hero .txt, .about-hero figure{ width: 100%; }
+    .about-values{ grid-template-columns: 1fr; }
+    .about-stats{ flex-direction: column; gap: 1.2em; }
+}
